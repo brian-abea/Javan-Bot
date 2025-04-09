@@ -1,0 +1,18 @@
+{
+  "0": "about_bot",
+  "1": "about_javan",
+  "2": "affirm",
+  "3": "ask_why_phone_locked",
+  "4": "check_asset_status",
+  "5": "deny",
+  "6": "fallback",
+  "7": "goodbye",
+  "8": "greet",
+  "9": "help",
+  "10": "inform",
+  "11": "inquire_smartphone_financing",
+  "12": "make_payment",
+  "13": "phone_locked_but_paid",
+  "14": "provide_phone_number",
+  "15": "verify_employee"
+}

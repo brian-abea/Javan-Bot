@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwtylEKgCAQRdGtzAJagVuJkEGmGsin6diPuPeE+rsH7trHQj0XeTwH0wRH/QsPjuLox6XVBPNtVcp8FJPmSHE3LeJr5GL5TBC/KxhBcYyxvdVJJRc=": "utter_inquire_smartphone_financing",
+    "eJyVjUEKgDAMBL/SB/iCfkUklBI1oKumqZfSv1vQs+JtB4bZvtTOlV35pBBNNnhX7kEIK3v3wCLJGM3NibU5gobmneDIokxpDWr7vIFpFAREwVQ/0tmMlV4LP/+GC659UU0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnlEZX5CRn5can5OfnJ2aUlsbCwC23CGu": "utter_why_phone_locked",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnlEZX5CRn5can5OfnJ2aUkvAyNKSktQiTF1Emh0LADodRXQ=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTs+sbg4tSS+uCSxpLS4tjYWAHLEIO4=": "action_ask_for_plate",
+    "eJyNjMEJwCAMAFfJAJ3AVUoJQVIq2igm9iPuXqEdwN8dHLf3sUEvlR8kbyGLg/4BCt3s4JcU1Fhm25TrbIJMNQf+Yh+RVNlQjazpWBuSRjxzxZLIeO17vJMDQvY=": "action_listen",
+    "eJytjkEKwjAQRa8yByii21wlhDDEEYfGJGSm3ZTc3aFW3bpw9z88/vt+GxNsrdMaMSnX4mB7hVjwQQ6OklmUirGLUDeGi1V1kO6U5ogipFEUdZHx2yDKHG+1x5ZR6Y+7n6OSq4pBu8CBv5zO4esxCSuTAX4HwgRvdet15Ssdz0Z4AoTEboQ=": "action_check_asset_status",
+    "eJytjjEKwzAMRa+iA4TSrr6KMUa4KhVxbWMpWUzuXpOk7dIhQzYJHv8925YBWqk0ewzKORlo2+ETvsjA/kQWpdTZSah2hlN/1UB4Uhg9ipB6UdRJlmODKKN/5OpLRKUTd7+hErNKh1aBAXu7XN3P0yWsTB2wK+AG+KhLzTPfaS87Zv2Te16BewMQqJ8D": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhICM/LzU+Jz85OzUlPqm0JL4gMTOltjYWANeHIgA=": "utter_phone_locked_but_paid",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhICM/LzU+Jz85OzUlPqm0JL4gMTOlloCZpSUlqUXx2LUSa0MsACBlSAg=": "action_listen",
+    "eJwti0EKwzAMBL+iB4TSXP0VY4wwgoq6Sog2uRj/vaLNbXd2No+50NgPuSo36GaJxj9U448kuktXh1i43jd4SHtnxJzXx7MEPl2OoGJQqISQf0JZSC2OSNRe0t6V3QXVwTh9zvIFxBYvUQ==": "action_check_asset_status",
+    "eJytjrEKwzAMRH9FHxBKs/pXjDHCCCrqKiG6ZDH594q2Y4cO3U5379DlcU401k2Oyg26WKLxFtX4IYk+R1eHWLDeF3hAa2dEnOfLtYS9u2zhikGhEkB+AWUitSgiUbtJu1d2F1QHY/fzt9dfin+eUZ4Y1GHi": "action_listen"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "back": 1,
+        "check_asset_status": 2,
+        "deny": 3,
+        "fallback": 4,
+        "goodbye": 5,
+        "greet": 6,
+        "help": 7,
+        "inform": 8,
+        "inquire_smartphone_financing": 9,
+        "javan": 10,
+        "make_payment": 11,
+        "nlu_fallback": 12,
+        "out_of_scope": 13,
+        "provide_imei": 14,
+        "restart": 15,
+        "session_start": 16
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_asset_status": 13,
+        "action_ask_for_imei": 14,
+        "utter_inquire_smartphone_financing": 15,
+        "utter_affirm": 16,
+        "utter_deny": 17,
+        "utter_fallback": 18,
+        "utter_goodbye": 19,
+        "utter_greet": 20,
+        "utter_help": 21,
+        "utter_javan": 22,
+        "utter_make_payment": 23,
+        "utter_phone_locked_but_paid": 24,
+        "utter_why_phone_locked": 25
+      },
+      "entities": {
+        "imei": 0
+      },
+      "slots": {
+        "imei_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}

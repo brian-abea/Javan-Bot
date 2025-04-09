@@ -1,0 +1,113 @@
+version: "3.1"
+
+intents:
+  - check_asset_status
+  - about_javan
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - inform
+  - help
+  - fallback
+  - make_payment
+  - inquire_smartphone_financing
+  - ask_why_phone_locked
+  - phone_locked_but_paid
+  - verify_employee
+  - provide_phone_number
+
+entities:
+  - plate
+  - contact
+
+slots:
+  contact:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: contact
+      - type: from_text
+
+  phone_verified:
+    type: bool
+    initial_value: false
+    mappings:
+      - type: custom
+
+  plate:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: plate
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_affirm:
+    - text: "Great! Let me know how I can help."
+
+  utter_deny:
+    - text: "Alright, no problem. Let me know if you need anything else."
+
+  utter_help:
+    - text: "I'm here to help! You can ask me about asset status, smartphone financing, payments, and more."
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't understand that. Could you rephrase?"
+
+  utter_javan:
+    - text: "I am Javan, an AI assistant chatbot for Watu Africa."
+
+  utter_inquire_smartphone_financing:
+    - text: |
+        The following phones are available for financing through Watu Simu:
+        - Samsung Galaxy A04e
+        - Samsung Galaxy A05
+        - Samsung Galaxy A05s
+        - Samsung Galaxy A06
+        - Samsung Galaxy A15
+        - Samsung Galaxy A16
+
+  utter_why_phone_locked:
+    - text: |
+        Your weekly payment was not made on time as per your loan agreement.
+
+        To unlock your phone, please make an immediate payment to Watu Pay Bill number: **650880**.
+
+  utter_phone_locked_but_paid:
+    - text: |
+        Please connect to an active internet connection, and try again.
+
+        For further assistance, contact our Watu Simu Customer Care team: **0800 722 245**.
+
+  utter_ask_for_plate:
+    - text: "I need the PLATE number to check the asset status. Please provide it."
+
+  utter_make_payment:
+    - text: |
+        💳 **How to Make a Payment:**
+        1️⃣: Go to **M-Pesa**
+        2️⃣: Select **Lipa na M-Pesa**
+        3️⃣: Choose **Paybill**
+        4️⃣: Enter **650880** as the Paybill number
+        5️⃣: Use **Your ID Number** as the account number
+        6️⃣: Enter the amount and confirm payment
+
+  utter_ask_for_phone_number:
+    - text: "Please enter your phone number for verification."
+
+  utter_invalid_phone_number:
+    - text: "The phone number you entered is invalid. Please try again."
+
+  utter_access_denied:
+    - text: "⚠️ You need to verify your phone number before accessing asset data."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+actions:
+  - action_check_asset_status
+  - action_verify_employee
+  - action_verify_phone

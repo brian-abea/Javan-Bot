@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-imei",
+      "2": "I-imei",
+      "3": "L-imei",
+      "4": "U-imei",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-imei": 1,
+      "I-imei": 2,
+      "L-imei": 3,
+      "U-imei": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

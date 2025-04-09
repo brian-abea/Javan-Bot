@@ -1,0 +1,68 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_why_phone_locked": 1,
+        "back": 2,
+        "check_asset_status": 3,
+        "deny": 4,
+        "fallback": 5,
+        "goodbye": 6,
+        "greet": 7,
+        "help": 8,
+        "inform": 9,
+        "inquire_smartphone_financing": 10,
+        "javan": 11,
+        "make_payment": 12,
+        "nlu_fallback": 13,
+        "out_of_scope": 14,
+        "phone_locked_but_paid": 15,
+        "restart": 16,
+        "session_start": 17,
+        "verify_employee": 18
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_asset_status": 13,
+        "action_verify_employee": 14,
+        "utter_affirm": 15,
+        "utter_ask_for_plate": 16,
+        "utter_deny": 17,
+        "utter_fallback": 18,
+        "utter_goodbye": 19,
+        "utter_greet": 20,
+        "utter_help": 21,
+        "utter_inquire_smartphone_financing": 22,
+        "utter_javan": 23,
+        "utter_make_payment": 24,
+        "utter_phone_locked_but_paid": 25,
+        "utter_why_phone_locked": 26
+      },
+      "entities": {
+        "plate": 0
+      },
+      "slots": {
+        "plate_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}

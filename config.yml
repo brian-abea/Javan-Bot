@@ -1,0 +1,21 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+- name: EntitySynonymMapper
+- name: ResponseSelector
+- name: FallbackClassifier
+  threshold: 0.3
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+- name: UnexpecTEDIntentPolicy
+- name: TEDPolicy
+assistant_id: 20250309-144544-timid-weight

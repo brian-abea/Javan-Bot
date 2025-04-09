@@ -1,0 +1,12 @@
+{
+  "0": "affirm",
+  "1": "check_asset_status",
+  "2": "deny",
+  "3": "fallback",
+  "4": "goodbye",
+  "5": "greet",
+  "6": "help",
+  "7": "inform",
+  "8": "javan",
+  "9": "make_payment"
+}

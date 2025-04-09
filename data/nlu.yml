@@ -1,0 +1,158 @@
+version: "3.1"
+
+nlu:
+- intent: check_asset_status
+  examples: |
+    - What is the status of asset PLATE [KMGE234M](plate)?
+    - Check the status of [KMGH464M](plate)
+    - Is asset [KMCG674Y](plate) online?
+    - Give me the details for PLATE [KMFU298T](plate)
+    - Check PLATE [KMFD908T](plate)
+    - Find asset with PLATE [KMFR453T](plate)
+    - Look up the details for [KMTU123P](plate)
+    - Retrieve status of [KMAF654B](plate)
+    - Can you check asset [KMFG222A](plate) for me?
+
+- intent: provide_phone_number
+  examples: |
+    - My number is [254740123768](contact)
+    - Here is my phone number: [0712345678](contact)
+    - [0723456789](contact) is my phone number
+    - It's [0798765432](contact)
+    - You can reach me at [0743124567](contact)
+    - My contact number is [0712345678](contact)
+    - This is my phone number: [0701234567](contact)
+
+- intent: verify_employee
+  examples: |
+    - I want to verify my phone number
+    - Verify my employee status
+    - Am I registered as an employee?
+    - Authenticate me
+    - Check if I am an employee
+    - Confirm my employee details
+    - Is my phone number in your system?
+    - How do I verify myself?
+    - I need access to asset data
+
+- intent: about_javan
+  examples: |
+    - Who is Javan?
+    - Tell me about Javan
+    - What does Javan do?
+    - Do you know Javan?
+    - Give me details about Javan
+    - I want to know about Javan
+    - Who are you?
+    - Are you human?
+    - What is your name?
+
+- intent: greet
+  examples: |
+    - Hello
+    - Hi there!
+    - Hey!
+    - Good morning
+    - Good afternoon
+    - What's up?
+    - Hi bot!
+    - Greetings
+    - Hey, how's it going?
+    -  Hello, how are you?
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye!
+    - See you later
+    - Have a nice day!
+    - Catch you later
+    - Farewell
+    - Bye for now
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Sure
+    - Absolutely
+    - That's right
+    - Correct
+    - Yep
+    - Of course
+
+- intent: deny
+  examples: |
+    - No
+    - Nope
+    - Not really
+    - Nah
+    - I don't think so
+    - No way
+    - Not at all
+
+- intent: inform
+  examples: |
+    - The PLATE is [KMFR453T](plate)
+    - I want to check PLATE [KMGH464M](plate)
+    - My number is [254740123768](contact)
+    - Verify my phone number [0722123456](contact)
+    - My plate number is [KCT123L](plate)
+
+- intent: help
+  examples: |
+    - I need help
+    - What can you do?
+    - How does this work?
+    - Assist me, please
+    - Can you help?
+    - Guide me through this
+    - I'm stuck, help me out
+
+- intent: fallback
+  examples: |
+    - I don't understand
+    - What are you saying?
+    - That doesn't make sense
+    - I have no idea what you mean
+    - Repeat that, please
+    - Can you clarify?
+
+- intent: make_payment
+  examples: |
+    - How do I pay for my phone?
+    - I want to make a payment
+    - Paybill for making payment
+    - What is the paybill number?
+    - How do I settle my phone bill?
+    - Guide me on how to pay for my phone
+
+- intent: inquire_smartphone_financing
+  examples: |
+    - What smartphones are available for financing?
+    - Which phones can I finance?
+    - Do you have any phones available for financing?
+    - What phone models can I get on financing?
+    - List the smartphones available for financing.
+    - Tell me the available financing options for phones.
+    - Can I get a phone on credit?
+    - Show me the phone financing options.
+    - What phones can I buy on loan?
+
+- intent: ask_why_phone_locked
+  examples: |
+    - Why is my phone locked?
+    - My phone is locked. Why?
+    - Why can't I access my phone?
+    - My phone screen says it's locked. What's the reason?
+    - What causes my phone to be locked?
+    - Explain why my phone is locked
+    - What is the reason for my phone being locked?
+
+- intent: phone_locked_but_paid
+  examples: |
+    - My phone is locked, but I have made my payments on time. What do I do?
+    - I paid on time, but my phone is still locked.
+    - My phone is locked even though I made my payment.
+    - I have cleared my payment, but my phone remains locked.
+    - I already paid, but my phone is not unlocking.
+    - I settled my bill, but my phone is still restricted.

@@ -1,0 +1,17 @@
+{
+  "0": "affirm",
+  "1": "ask_why_phone_locked",
+  "2": "check_asset_status",
+  "3": "deny",
+  "4": "fallback",
+  "5": "goodbye",
+  "6": "greet",
+  "7": "help",
+  "8": "inform",
+  "9": "inquire_smartphone_financing",
+  "10": "javan",
+  "11": "make_payment",
+  "12": "phone_locked_but_paid",
+  "13": "provide_phone_number",
+  "14": "verify_employee"
+}

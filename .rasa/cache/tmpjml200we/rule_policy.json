@@ -1,0 +1,52 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}]": "utter_deny",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}, {\"prev_action\": {\"action_name\": \"utter_deny\"}, \"user\": {\"intent\": \"deny\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"make_payment\"}}]": "utter_make_payment",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"make_payment\"}}, {\"prev_action\": {\"action_name\": \"utter_make_payment\"}, \"user\": {\"intent\": \"make_payment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}]": "utter_affirm",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}, {\"prev_action\": {\"action_name\": \"utter_affirm\"}, \"user\": {\"intent\": \"affirm\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_why_phone_locked\"}}]": "utter_why_phone_locked",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_why_phone_locked\"}}, {\"prev_action\": {\"action_name\": \"utter_why_phone_locked\"}, \"user\": {\"intent\": \"ask_why_phone_locked\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"phone_locked_but_paid\"}}]": "utter_phone_locked_but_paid",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"phone_locked_but_paid\"}}, {\"prev_action\": {\"action_name\": \"utter_phone_locked_but_paid\"}, \"user\": {\"intent\": \"phone_locked_but_paid\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"imei\": [1.0]}, \"user\": {\"intent\": \"check_asset_status\"}}]": "action_check_asset_status",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"imei\": [1.0]}, \"user\": {\"intent\": \"check_asset_status\"}}, {\"prev_action\": {\"action_name\": \"action_check_asset_status\"}, \"slots\": {\"imei\": [1.0]}, \"user\": {\"intent\": \"check_asset_status\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"help\"}}]": "utter_help",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"help\"}}, {\"prev_action\": {\"action_name\": \"utter_help\"}, \"user\": {\"intent\": \"help\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"javan\"}}]": "utter_javan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"javan\"}}, {\"prev_action\": {\"action_name\": \"utter_javan\"}, \"user\": {\"intent\": \"javan\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_fallback",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}, {\"prev_action\": {\"action_name\": \"utter_deny\"}, \"user\": {\"intent\": \"deny\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"make_payment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"help\"}}, {\"prev_action\": {\"action_name\": \"utter_help\"}, \"user\": {\"intent\": \"help\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"help\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"javan\"}}, {\"prev_action\": {\"action_name\": \"utter_javan\"}, \"user\": {\"intent\": \"javan\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"javan\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"make_payment\"}}, {\"prev_action\": {\"action_name\": \"utter_make_payment\"}, \"user\": {\"intent\": \"make_payment\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm\"}}, {\"prev_action\": {\"action_name\": \"utter_affirm\"}, \"user\": {\"intent\": \"affirm\"}}]"
+    ]
+  }
+}

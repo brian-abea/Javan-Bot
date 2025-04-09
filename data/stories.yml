@@ -1,0 +1,55 @@
+version: "3.1"
+
+stories:
+  - story: User requests asset details (phone verification required)
+    steps:
+      - intent: check_asset_status
+      - action: utter_ask_for_phone_number
+      - intent: provide_phone_number
+      - action: action_verify_phone
+      - slot_was_set:
+          - phone_verified: true
+      - intent: inform
+        entities:
+          - plate: "KMGE234M"
+      - action: action_check_asset_status
+
+  - story: User enters an invalid phone number (phone verification fails)
+    steps:
+      - intent: check_asset_status
+      - action: utter_ask_for_phone_number
+      - intent: provide_phone_number
+      - action: action_verify_phone
+      - slot_was_set:
+          - phone_verified: false
+      - action: utter_invalid_phone_number
+
+  - story: User is denied access (phone verification fails)
+    steps:
+      - intent: check_asset_status
+      - action: utter_ask_for_phone_number
+      - intent: provide_phone_number
+      - action: action_verify_phone
+      - slot_was_set:
+          - phone_verified: false
+      - action: utter_invalid_phone_number
+
+  - story: User asks for smartphone financing
+    steps:
+      - intent: inquire_smartphone_financing
+      - action: utter_inquire_smartphone_financing
+
+  - story: User asks why phone is locked
+    steps:
+      - intent: ask_why_phone_locked
+      - action: utter_why_phone_locked
+
+  - story: User's phone is locked despite payments
+    steps:
+      - intent: phone_locked_but_paid
+      - action: utter_phone_locked_but_paid
+
+  - story: User makes a payment
+    steps:
+      - intent: make_payment
+      - action: utter_make_payment

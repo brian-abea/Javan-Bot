@@ -1,0 +1,80 @@
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Request phone number for verification (before asset check)
+    steps:
+      - intent: check_asset_status
+      - action: utter_ask_for_phone_number
+
+  - rule: Verify phone number for asset access
+    steps:
+      - intent: provide_phone_number
+      - action: action_verify_phone
+      - slot_was_set:
+          - phone_verified: true
+
+  - rule: Deny access if phone number is not verified
+    steps:
+      - intent: provide_phone_number
+      - action: action_verify_phone
+      - slot_was_set:
+          - phone_verified: false
+      - action: utter_invalid_phone_number
+
+  - rule: Request asset details (after phone verification)
+    condition:
+      - slot_was_set:
+          - phone_verified: true
+    steps:
+      - intent: check_asset_status
+      - action: action_check_asset_status
+
+  - rule: Provide help response
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - rule: Respond to Javan query
+    steps:
+      - intent: about_javan
+      - action: utter_javan
+
+  - rule: Handle affirmation
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - rule: Handle denial
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - rule: Respond to smartphone financing inquiry
+    steps:
+      - intent: inquire_smartphone_financing
+      - action: utter_inquire_smartphone_financing
+
+  - rule: Explain why phone is locked
+    steps:
+      - intent: ask_why_phone_locked
+      - action: utter_why_phone_locked
+
+  - rule: Handle locked phone despite payment
+    steps:
+      - intent: phone_locked_but_paid
+      - action: utter_phone_locked_but_paid
+
+  - rule: Handle payment process
+    steps:
+      - intent: make_payment
+      - action: utter_make_payment

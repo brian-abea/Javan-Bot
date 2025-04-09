@@ -1,0 +1,77 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "about_bot": 0,
+        "about_javan": 1,
+        "affirm": 2,
+        "ask_why_phone_locked": 3,
+        "back": 4,
+        "check_asset_status": 5,
+        "deny": 6,
+        "fallback": 7,
+        "goodbye": 8,
+        "greet": 9,
+        "help": 10,
+        "inform": 11,
+        "inquire_smartphone_financing": 12,
+        "make_payment": 13,
+        "nlu_fallback": 14,
+        "out_of_scope": 15,
+        "phone_locked_but_paid": 16,
+        "provide_phone_number": 17,
+        "restart": 18,
+        "session_start": 19,
+        "verify_employee": 20
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_asset_status": 13,
+        "action_verify_employee": 14,
+        "action_verify_phone": 15,
+        "utter_access_denied": 16,
+        "utter_affirm": 17,
+        "utter_ask_for_phone_number": 18,
+        "utter_ask_for_plate": 19,
+        "utter_deny": 20,
+        "utter_fallback": 21,
+        "utter_goodbye": 22,
+        "utter_greet": 23,
+        "utter_help": 24,
+        "utter_inquire_smartphone_financing": 25,
+        "utter_javan": 26,
+        "utter_make_payment": 27,
+        "utter_phone_locked_but_paid": 28,
+        "utter_why_phone_locked": 29
+      },
+      "entities": {
+        "contact": 0,
+        "plate": 1
+      },
+      "slots": {
+        "contact_0": 0,
+        "phone_verified_0": 1,
+        "phone_verified_1": 2,
+        "plate_0": 3
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}
