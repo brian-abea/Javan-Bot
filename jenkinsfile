@@ -1,0 +1,55 @@
+pipeline {
+  agent any
+
+  environment {
+    RASA_DIR = '.'                 // Backend is in project root
+    FRONTEND_DIR = 'bot-ui/bot-ui' // React frontend path
+  }
+
+  stages {
+    stage('Checkout Code') {
+      steps {
+        checkout scm
+      }
+    }
+
+    stage('Install React Dependencies') {
+      steps {
+        dir("${FRONTEND_DIR}") {
+          sh 'npm install'
+        }
+      }
+    }
+
+    stage('Install Rasa Dependencies') {
+      steps {
+        dir("${RASA_DIR}") {
+          sh '''
+            python -m venv venv
+            . venv/Scripts/activate
+            pip install -r requirements.txt
+          '''
+        }
+      }
+    }
+
+    stage('Run Rasa Tests') {
+      steps {
+        dir("${RASA_DIR}") {
+          sh '''
+            . venv/Scripts/activate
+            rasa test
+          '''
+        }
+      }
+    }
+
+    stage('Build Frontend') {
+      steps {
+        dir("${FRONTEND_DIR}") {
+          sh 'npm run build'
+        }
+      }
+    }
+  }
+}
